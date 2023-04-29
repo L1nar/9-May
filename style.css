@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    height: 100%;
+    background: linear-gradient(150deg, rgba(255, 25, 25, 0.6), rgb(172, 103, 0.6), rgb(255, 238, 0.6));
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.bg__img {
+    max-width: 50%;
+    max-height: 50%;
+    position: absolute;
+    right: 780px;
+    bottom: 250px;
+}
+
+.helmet__img {
+    position: absolute;
+    right: 1000px;
+    bottom: 850px;
+}
+
+.nine__img {
+    position: absolute;
+    left: 100px;
+    top: 170px;
+    max-height: 80%;
+}
+
+.fire__img {
+    position: absolute;
+    right: 170px;
+    bottom: 0;
+    max-height: 40%;
+}
+
+.poem__img {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    min-height: 60%;
+}
+
+.title {
+    position: absolute;
+    animation: shadow  2s infinite alternate ;
+    font-size: 80px;
+    font-family: 'Shantell Sans', cursive;
+    top: 550px;
+    right: 920px;
+}
+
+.main {
+    width: 500px;
+    position: relative;
+}
+
+.main__text {
+    font-family: 'Bad Script', cursive;
+    top: 150px;
+    left: 50px;
+    position: absolute;
+    font-size: 50px;
+    background: linear-gradient(45deg, #ff1100, #ffd900, #aa6000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: zoom 7s backwards;
+}
+
+.second__text {
+    padding-top: 225px;
+    display: flex;
+    font-family: 'Bad Script', cursive;
+    top: 200px;
+    left: 120px;
+    font-size: 50px;
+    background: linear-gradient(65deg, #ffd900, #ff1100, #aa6000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: zoom 7s backwards;
+}
+
+.third__text {
+    font-family: 'Bad Script', cursive;
+    top: 300px;
+    left: 120px;
+    position: absolute;
+    font-size: 50px;
+    background: linear-gradient(150deg, #ff1100, #ffd900, #aa6000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: zoom 7s backwards;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shadow {
+    0% {
+        text-shadow: 0 0 10px rgb(245, 0, 0);
+    }
+
+    50% {
+        text-shadow: 0 0 10px rgb(231, 93, 0);
+    }
+
+    100% {
+        text-shadow: 0 0 10px rgb(218, 196, 0);
+    }
+
+}
